@@ -1,4 +1,4 @@
-# CTI-IMPLEMENTATION_ALIENVAULT-MISP-RITA-SPLUNK
+# CTI-IMPLEMENTATION_ALIENVAULT-MISP-RITA-SPLUNK-SPAMHAUS 
 Developed scripts or tools to automatically retrieve and update  data from the feeds and from ALIENVAULT to MISP.
 
 
@@ -25,6 +25,13 @@ Username: admin@admin.test
 Password: admin
 Congratulations! At this point, you should have the base installation of MISP and will be ready to go!
 
+
+ # SPAMHAUS
+
+ Get access to this link : 
+
+    https://www.spamhaus.com/threat-map/
+ 
 
 # OTX_IOC_RETRIEVER.PY
 otx_ioc_retriever.py is a created Python script that interacts with the AlienVault Open Threat Exchange (OTX) API to retrieve indicators of compromise (IOCs) from pulses on which we have subscribed. 
@@ -96,6 +103,10 @@ bash
 
            sudo apt-get update
           sudo apt-get install curl
+
+
+
+          
 
           
 

@@ -1,5 +1,5 @@
 # CTI-IMPLEMENTATION_ALIENVAULT-MISP-RITA-SPLUNK-SPAMHAUS 
-Developed tools on ubuntu22.04 LTS to automatically retrieve, update, and send data feeds from ALIENVAULT, SPAMHAUS AND RITA to MISP and use SPLUNK to get an event DASHBOARD . 
+Developed Cyber Threat Intelligence tools to automatically retrieve, update, and send  data feeds from ALIENVAULT, SPAMHAUS AND RITA to MISP and use SPLUNK to get a real-time event DASHBOARD. 
 
 
 # ALIENVAULT SETUP

@@ -11,7 +11,7 @@ otx_ioc_retriever.py is a created Python script that interacts with the AlienVau
 otx_to_misp.py is a Python script that retrieves indicators from AlienVault Open Threat Exchange (OTX) pulses and sends them to a MISP (Malware Information Sharing Platform & Threat Sharing) instance.
 To adapt this script for another system or use case, you may need to make the following changes:
 
-    API Keys and URLs: Replace the existing OTX API key, MISP URL, and MISP API key with your own credentials.
+    API Keys and URLs: Replace the existing OTX API key, MISP URL, and MISP API key with your credentials.
 
     MISP Indicator Type: Adjust the MISP indicator type ("type": "text") based on the type of data you are handling.
 
@@ -20,3 +20,16 @@ To adapt this script for another system or use case, you may need to make the fo
     Error Handling: Enhance error handling mechanisms as needed.
 
     Security Considerations: Be cautious about disabling SSL verification (verify=False) in the requests to MISP. It's generally recommended to use a secure connection, especially in production environments.
+
+
+
+RITA is an open source framework for network traffic analysis.
+RITA provides an install script that works on Ubuntu, Debian, Security Onion, and CentOS
+
+
+Choose one of the following install methods:
+
+ 
+     sudo ./install.sh (will install RITA as well as supported versions of Zeek and MongoDB. This is suitable if you want to get started as quickly as possible or you don't already have Zeek or MongoDB.)
+
+    sudo ./install.sh --disable-zeek --disable-mongo ( will install RITA only, without Zeek or MongoDB. You may also use these flags individually.)

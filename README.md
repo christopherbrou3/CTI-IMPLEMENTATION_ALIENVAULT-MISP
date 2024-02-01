@@ -1,5 +1,30 @@
-# CTI-IMPLEMENTATION_ALIENVAULT-MISP
+# CTI-IMPLEMENTATION_ALIENVAULT-MISP-RITA-SPLUNK
 Developed scripts or tools to automatically retrieve and update  data from the feeds and from ALIENVAULT to MISP.
+
+
+# ALIENVAULT SETUP
+Create an account on 
+https://otx.alienvault.com/
+and log in and subscribe to Pulses to get the Feeds Us you want. 
+
+# MISP INSTALLATION 
+
+How to install MISP on Ubuntu
+
+If you are looking to install MISP for work or on your home lab, then this quick guide might be of use for you.
+MISP has done a good job in creating install scripts that do most if not all the work for you.
+You can easily run the following to do about 99% of the configuration for you.
+
+       wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh ; bash /tmp/INSTALL.sh
+       wget -O /tmp/INSTALL.sh https://raw.githubusercontent.com/MISP/MISP/2.4/INSTALL/INSTALL.sh ; bash /tmp/INSTALL.sh -c
+
+
+Once the deployment finishes, you should be able to navigate to the IP or hostname of the machine you deployed MISP on. Example, https://hostname or https://IP_address.
+At the login screen you should use the following default credentials, this will then prompt you to change the default admin password.
+Username: admin@admin.test
+Password: admin
+Congratulations! At this point, you should have the base installation of MISP and will be ready to go!
+
 
 # OTX_IOC_RETRIEVER.PY
 otx_ioc_retriever.py is a created Python script that interacts with the AlienVault Open Threat Exchange (OTX) API to retrieve indicators of compromise (IOCs) from pulses on which we have subscribed. 
@@ -21,7 +46,7 @@ To adapt this script for another system or use case, you may need to make the fo
 
     Security Considerations: Be cautious about disabling SSL verification (verify=False) in the requests to MISP. It's generally recommended to use a secure connection, especially in production environments.
 
-
+# RITA INSTALLATION
 
 RITA is an open source framework for network traffic analysis.
 RITA provides an install script that works on Ubuntu, Debian, Security Onion, and CentOS
@@ -35,7 +60,7 @@ Choose one of the following install methods:
     sudo ./install.sh --disable-zeek --disable-mongo ( will install RITA only, without Zeek or MongoDB. You may also use these flags individually.)
 
 
-    SPLUNK SETUP 
+ # SPLUNK INSTALLATION (UBUNTU)
     
 Certainly! Here are the steps to install Splunk on Ubuntu 22.04 using the provided .deb package:
 1.	Navigate to the Downloads  where ou have install your slpunk .deb from splunk.com website after that ( Open a terminal and navigate to the directory where the Splunk .deb package is located. In your case, it's the /home/brou/Downloads directory.)
@@ -71,4 +96,6 @@ bash
 
            sudo apt-get update
           sudo apt-get install curl
+
+          
 

@@ -1,5 +1,5 @@
 # CTI-IMPLEMENTATION_ALIENVAULT-MISP-RITA-SPLUNK-SPAMHAUS 
-Developed Cyber Threat Intelligence tools to automatically retrieve, update, and send  data feeds from ALIENVAULT, SPAMHAUS AND RITA to MISP and use SPLUNK to get a real-time event DASHBOARD. 
+Developed Cyber Threat Intelligence tool to automatically retrieve, update, and send  data feeds from ALIENVAULT, SPAMHAUS AND RITA to MISP and use SPLUNK to get a real-time event DASHBOARD. 
 
 
 

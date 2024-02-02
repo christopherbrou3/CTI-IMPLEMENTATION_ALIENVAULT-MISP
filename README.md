@@ -70,7 +70,8 @@ RITA provides an install script that works on Ubuntu, Debian, Security Onion, an
 
 Choose one of the following install methods:
 
- 
+
+     sudo chmod +x rita-mongodb-zeek.install.sh  (this command  will allow you to run the script )
      sudo ./rita-mongodb-zeek.install.sh (will install RITA as well as supported versions of Zeek and MongoDB. This is suitable if you want to get started as quickly as possible or you don't already have Zeek or MongoDB.)
 
     sudo ./rita-mongodb-zeek.install.sh --disable-zeek --disable-mongo ( will install RITA only, without Zeek or MongoDB. You may also use these flags individually.)
